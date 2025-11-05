@@ -1,7 +1,7 @@
 # Linenoise
 
 A minimal, zero-config, BSD licensed, readline replacement used in Redis,
-MongoDB, Android and many other projects.
+MongoDB, Android and many other projects. By [Salvatore Sanfilippo](https://github.com/antirez).
 
 * Single and multi line editing mode with the usual key bindings implemented.
 * History handling.
@@ -10,6 +10,28 @@ MongoDB, Android and many other projects.
 * Multiplexing mode, with prompt hiding/restoring for asynchronous output.
 * About ~850 lines (comments and spaces excluded) of BSD license source code.
 * Only uses a subset of VT100 escapes (ANSI.SYS compatible).
+
+## Installation
+
+Run:
+```bash
+$ npm i linenoise.c
+```
+
+And then include `linenoise.h` as follows:
+```c
+#include "node_modules/linenoise.c/linenoise.h"
+```
+
+You may also want to include `linenoise.c` as follows:
+```c
+#ifndef __LINENOISE_C__
+#define __LINENOISE_C__
+#include "node_modules/linenoise.c/linenoise.c"
+#endif
+```
+
+This will include both the function declaration and their definitions into a single file.
 
 ## Can a line editing library be 20k lines of code?
 
@@ -345,3 +367,10 @@ You can test the example by running the example program with the `--async` optio
 
 * [Linenoise NG](https://github.com/arangodb/linenoise-ng) is a fork of Linenoise that aims to add more advanced features like UTF-8 support, Windows support and other features. Uses C++ instead of C as development language.
 * [Linenoise-swift](https://github.com/andybest/linenoise-swift) is a reimplementation of Linenoise written in Swift.
+
+<br>
+<br>
+
+
+[![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/linenoise.c)

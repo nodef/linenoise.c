@@ -1,0 +1,15 @@
+{
+  "name": "linenoise.c",
+  "version": "1.2025.9",
+  "description": "A small self-contained alternative to readline and libedit; Salvatore Sanfilippo (2010).",
+  "keywords": ["c", "library", "readline", "libedit", "linenoise"],
+  "license": "BSD-2-Clause",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodef/linenoise.c.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nodef/linenoise.c/issues"
+  },
+  "homepage": "https://github.com/nodef/linenoise.c#readme"
+}
