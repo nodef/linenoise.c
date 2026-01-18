@@ -57,6 +57,48 @@ easy to understand code.
 
 Send feedbacks to antirez at gmail
 
+
+# Installation
+
+Run:
+
+```sh
+$ npm i linenoise.c
+```
+
+And then include `linenoise.h` as follows:
+
+```c
+// main.c
+#include "node_modules/linenoise.c/linenoise.h"
+
+int main() { /* ... */ }
+```
+
+And then compile with `clang` or `gcc` as usual.
+
+```bash
+$ clang main.c  # or, use gcc
+$ gcc   main.c
+```
+
+You may also use a simpler approach:
+
+```c
+// main.c
+#include <linenoise.h>
+
+int main() { /* ... */ }
+```
+
+If you add the path `node_modules/linenoise.c` to your compiler's include paths.
+
+```bash
+$ clang -I./node_modules/linenoise.c main.c  # or, use gcc
+$ gcc   -I./node_modules/linenoise.c main.c
+```
+
+
 # The API
 
 Linenoise is very easy to use, and reading the example shipped with the
