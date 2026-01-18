@@ -38,12 +38,8 @@ echo ""
 
 # Test the project
 test() {
-echo "Running 010-TestCase.cpp ..."
-clang++ -std=c++17 -I. -o 010.exe examples/010-TestCase.cpp   && ./010.exe && echo -e "\n"
-echo "Running 020-TestCase-1.cpp ..."
-clang++ -std=c++17 -I. -o 020.exe examples/020-TestCase-1.cpp && ./020.exe && echo -e "\n"
-echo "Running 030-TestCase-2.cpp ..."
-clang++ -std=c++17 -I. -o 020.exe examples/020-TestCase-2.cpp && ./020.exe && echo -e "\n"
+echo "Running 01-example ..."
+clang -I. -o 01.exe examples/01-example.c && ./01.exe && echo -e "\n"
 }
 
 

@@ -26,6 +26,6 @@
   "author": "wolfram77@gmail.com",
   "main": "linenoise.h",
   "scripts": {
-    "test": "exit"
+    "test": "bash build.sh test"
   }
 }
