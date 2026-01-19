@@ -1,6 +1,6 @@
 {
   "name": "linenoise.c",
-  "version": "2.2026.1",
+  "version": "2.2026.3",
   "description": "A small self-contained alternative to readline and libedit; Salvatore Sanfilippo (2010).",
   "keywords": [
     "c",
